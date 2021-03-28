@@ -30,12 +30,12 @@ whyWeak = (pw, isAdmin) => {
     reason.push("it does not contain any letters");
     i++;
   }
-  if (!new RegExp(/^(?=.*[!@#$%^&*])/).test(pw.value) && isAdmin) {
-    reason.push("it does not contain any special characters");
+  if (!new RegExp(/([!@#$%^&*]){3,}/).test(pw.value) && isAdmin) {
+    reason.push("it does not contain at least 3 special characters");
     i++;
   }
   //check alphanumeric length. Will fail with only special characters
-  if (pw.value.length < 8 && !isAdmin) {
+  if (pw.value.length < 10 && !isAdmin) {
     reason.push("it is not the minimum length");
     i++;
   }
@@ -55,8 +55,8 @@ whyWeak = (pw, isAdmin) => {
 //figures out which requirements to use when checking the password
 pickReqs = (isAdmin) => {
   if (!isAdmin) {
-    return new RegExp(/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/);;
+    return new RegExp(/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/);
   } else {
-    return new RegExp(/^(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&*]).{13,}$/);
+    return new RegExp(/^(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&*].*[!@#$%^&*].*[!@#$%^&*]).{13,}$/);
   }
 }

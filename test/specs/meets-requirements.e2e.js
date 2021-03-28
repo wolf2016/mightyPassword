@@ -102,7 +102,7 @@ describe('Password Strength Check for regular users', () => {
 
     //verify the feedback is correctly displayed
     expect(PasswordPage.feedback).toHaveText('The password entered is not acceptable' +
-      ' because it does not contain any numbers');
+      ' because it does not contain any numbers and it is not the minimum length');
     expect(PasswordPage.feedbackContainer).not.toHaveElementClass('strong-pw');
     expect(PasswordPage.feedbackContainer).toHaveElementClass('weak-pw');
   });
