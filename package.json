@@ -1,0 +1,32 @@
+{
+  "name": "mightypassword",
+  "version": "1.0.0",
+  "description": "verifies the strength of a password",
+  "main": "index.js",
+  "scripts": {
+    "smokeTest": "npx wdio test/wdio.conf.js --spec ./test/specs/smoke.e2e.js",
+    "featureTest": "npx wdio test/wdio.conf.js --spec ./test/specs/meets-requirements.e2e.js",
+    "allTests": "npx wdio test/wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolf2016/mightyPassword.git"
+  },
+  "author": "Valencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolf2016/mightyPassword/issues"
+  },
+  "homepage": "https://github.com/wolf2016/mightyPassword#readme",
+  "dependencies": {
+    "@wdio/cli": "^7.2.3",
+    "webdriverio": "^7.2.3"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.2.3",
+    "@wdio/mocha-framework": "^7.2.1",
+    "@wdio/sync": "^7.2.3",
+    "chromedriver": "^89.0.0",
+    "wdio-chromedriver-service": "^7.0.0"
+  }
+}
