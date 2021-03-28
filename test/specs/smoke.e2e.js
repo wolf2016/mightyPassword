@@ -20,6 +20,6 @@ describe('Smoke Test', () => {
 
     expect(PasswordPage.submitBtn).toBeVisible();
     expect(PasswordPage.submitBtn).toHaveValue('Check Password');
-    expect(PasswordPage.submitBtn).toBeClickable()
+    expect(PasswordPage.submitBtn).toBeClickable();
   });
 });

@@ -42,7 +42,7 @@ class PasswordPage {
    * Opens the main page !
    */
   open() {
-    return browser.url(`http://localhost:8080/src/index.html`)
+    return browser.url(`http://localhost:8080/src/index.html`);
   }
 }
 

@@ -7,7 +7,7 @@ describe('Password Strength Check for regular users', () => {
     PasswordPage.checkPassword('password123');
 
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -32,7 +32,7 @@ describe('Password Strength Check for regular users', () => {
 
     PasswordPage.checkPassword('12345');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -58,7 +58,7 @@ describe('Password Strength Check for regular users', () => {
 
     PasswordPage.checkPassword('&');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -85,7 +85,7 @@ describe('Password Strength Check for regular users', () => {
 
     PasswordPage.checkPassword('abcdefgh');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
