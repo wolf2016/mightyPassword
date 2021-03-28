@@ -7,7 +7,7 @@ Instructions for Use:
 -   Download the code.
 -   Unpack it if you downloaded the zip.
 -   Open a command line tool on your computer.
--   In your chosen tool, navigate to where you downloaded the code. Ex. `E:\dev\mightyPassword`
+-   In your chosen tool, navigate to the root folder of the project. Ex. `E:\dev\mightyPassword`
 -   enter `npm install` to install all of the dependencies for this project.
 -   To run the Mighty Strong Password Checker, enter `npx http-server`
 -   After a few seconds, it should say it is available and you should be able to access it here http://localhost:8080/src/index.html
