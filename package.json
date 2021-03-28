@@ -1,6 +1,6 @@
 {
   "name": "mightypassword",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "verifies the strength of a password",
   "main": "index.js",
   "scripts": {
