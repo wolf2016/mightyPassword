@@ -6,7 +6,7 @@ describe('Password Strength Check for admin users', () => {
     PasswordPage.checkAdminPassword('password1234!@#');
 
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -31,7 +31,7 @@ describe('Password Strength Check for admin users', () => {
 
     PasswordPage.checkAdminPassword('password123');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -57,7 +57,7 @@ describe('Password Strength Check for admin users', () => {
 
     PasswordPage.checkAdminPassword('password1234!');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -83,7 +83,7 @@ describe('Password Strength Check for admin users', () => {
 
     PasswordPage.checkAdminPassword('&');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -110,7 +110,7 @@ describe('Password Strength Check for admin users', () => {
 
     PasswordPage.checkAdminPassword('abcdefghijklm');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
@@ -136,7 +136,7 @@ describe('Password Strength Check for admin users', () => {
 
     PasswordPage.checkAdminPassword('&^@#&^!@&#^@!#');
     //verify objects that should be static on the page haven't changed
-    expect(browser).toHaveTitle('Mighty Strong Password Checker')
+    expect(browser).toHaveTitle('Mighty Strong Password Checker');
     expect(PasswordPage.passwordLabel).toBeVisible();
     expect(PasswordPage.passwordLabel).toHaveText('Enter Password:');
     expect(PasswordPage.submitBtn).toBeVisible();
