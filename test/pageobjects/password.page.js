@@ -5,8 +5,14 @@ class PasswordPage {
   /**
    * define selectors using getter methods
    */
+  get adminLabel() {
+    return $('//label[@for="isAdmin"]');
+  }
+  get adminCkbox() {
+    return $('//*[@id="isAdmin"]');
+  }
   get passwordLabel() {
-    return $('//label');
+    return $('//label[@for="pw"]');
   }
   get passwordInput() {
     return $('//*[@id="pw"]');
@@ -27,7 +33,11 @@ class PasswordPage {
     this.passwordInput.setValue(password);
     this.submitBtn.click();
   }
-
+  checkAdminPassword(password) {
+    this.adminCkbox.click();
+    this.passwordInput.setValue(password);
+    this.submitBtn.click();
+  }
   /**
    * Opens the main page !
    */
